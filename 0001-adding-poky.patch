@@ -1,0 +1,33 @@
+From cd967e363695e6ee7afb7eae95ed43872c1fabf4 Mon Sep 17 00:00:00 2001
+From: Pranjal <pranjalgupta1901@gmail.com>
+Date: Sat, 2 Mar 2024 16:08:30 -0700
+Subject: [PATCH 1/2] adding poky
+
+---
+ .gitmodules | 4 ++++
+ poky        | 1 +
+ 2 files changed, 5 insertions(+)
+ create mode 160000 poky
+
+diff --git a/.gitmodules b/.gitmodules
+index ab122bd..f6ac2dd 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -1,3 +1,7 @@
+ [submodule "assignment-autotest"]
+ 	path = assignment-autotest
+ 	url = https://github.com/cu-ecen-aeld/assignment-autotest.git
++[submodule "poky"]
++	path = poky
++	url = https://git.yoctoproject.org/poky
++	branch = kirkstone
+diff --git a/poky b/poky
+new file mode 160000
+index 0000000..b3e316e
+--- /dev/null
++++ b/poky
+@@ -0,0 +1 @@
++Subproject commit b3e316e8486e5462c3c71a9c8248779a5c253385
+-- 
+2.25.1
+
